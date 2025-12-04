@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda Hidráulica y Neumática</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="Imagenesdereser/reser logo 2.jpg" class="logo" alt="Reser logo">
+    <h1>Catálogo de Reser Industrial</h1>
+    <h3>Soluciones industriales a tu alcance</h3>
+  </header>
+
+
+
+
+
+  
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="secciondiagramas.html">Diagramas</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenido al catálogo de Reser Industrial</h2>
+    <h3>Nos complace darte la más cordial bienvenida a nuestro catálogo, donde encontrarás una gran variedad de productos y servicios cuidadosamente seleccionados y pensados para ofrecer soluciones efectivas a tus necesidades. 
+      Cualquier producto que veas aqui o este relacionado puedes cotizarlo con alguno de nuestros vendedores.</h3>
+  </section>
+
+  <section id="Productos-destacados">
+    <h2>Productos destacados</h2>
+    <div class="contenedor-productos">
+      <div class="producto">
+        <img src="Imagenes de productos/BombaHidraulica.jpg" style="width:100%;height:auto;display:block;margin:0 auto;" alt="Compresor neumático">
+        <h3>Compresor neumático</h3>
+        <p>Compacto y eficiente para talleres.</p>
+       
+      </div>
+      <div class="producto">
+        <img src="Imagenes de productos/Abrazadera boss.jpg" style="width:100%;height:auto;display:block;margin:0 auto;" alt="Abrazadera">
+        <h3>Abrazaderas</h3>
+        <p>Alta presión, ideal para maquinaria pesada.</p>
+      
+      </div>
+      <div class="producto">
+        <img src="Imagenes de productos/motorTBTF.jpg" style="width:100%;height:auto;display:block;margin:0 auto;" alt="Motor">
+        <h3>Motores</h3>
+        <p>Potencia y eficiencia para aplicaciones industriales.</p>
+        
+      </div>
+      <div class="producto">
+        <img src="Imagenes de productos/manguerahidraulica.jpg" style="width:100%;height:auto;display:block;margin:0 auto;" alt="Manguera hidráulica">
+        <h3>Manguera Hidráulica</h3>
+        <p>Resistente para aplicaciones hidráulicas.</p>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="productos">
+    <h2>Catálogo de Productos</h2>
+
+    <!-- Selección principal: botones-imagen -->
+    <nav class="menu-categorias" aria-label="Categorías principales">
+      <button class="cat-btn" onclick="mostrarCategoria('hidraulicos')" aria-label="Hidráulicos">
+        <img src="Imagenesdereser/Una imagen promocion hidraulica.png" alt="Hidráulicos">
+        <div class="cat-label">Hidráulicos</div>
+      </button>
+
+      <button class="cat-btn" onclick="mostrarCategoria('neumaticos')" aria-label="Neumáticos">
+        <img src="Imagenesdereser/Una imagen promocion.png" alt="Neumáticos">
+        <div class="cat-label">Neumáticos</div>
+      </button>
+
+      <button class="cat-btn" onclick="mostrarCategoria('otros-productos')" aria-label="Otros Productos">
+        <img src="Imagenesdereser/otros .png" alt="Otros Productos">
+        <div class="cat-label">Otros Productos</div>
+      </button>
+    </nav>
+
+    <!-- Sección HIDRÁULICOS -->
+    <div id="hidraulicos" class="categoria oculto">
+      <h3>Productos Hidráulicos</h3>
+
+      <nav class="menu-categorias">
+        <button onclick="mostrarSubcategoria('abrazaderas-hidraulicas')">Abrazaderas</button>
+        <button onclick="mostrarSubcategoria('actuadores-hidraulicas')">Actuadores</button>
+        <button onclick="mostrarSubcategoria('bombas-hidraulicas')">Bombas</button>
+        <button onclick="mostrarSubcategoria('conexiones-hidraulicas')">Conexiones</button>
+        <button onclick="mostrarSubcategoria('valvulas-hidraulicas')">Válvulas</button>
+        <button onclick="mostrarSubcategoria('accesorios-hidraulicos')">Accesorios</button>
+      </nav>
+
+      <div id="actuadores-hidraulicas" class="subcategoria oculto">
+        <h4>Actuadores Hidráulicos</h4>
+        <div class="contenedor-productos">
+          <div class="producto"
+     data-descripcion="Cilindro hidráulico lineal, convierte presión en desplazamiento lineal."
+     data-condiciones="100–350 bar, montaje con rótulas, mangueras flexibles."
+     data-aplicaciones="Brazos articulados, plataformas elevadoras, maquinaria pesada"
+     data-precauciones=" Evitar interferencias, revisar mangueras y anclajes, proteger contra impactos.">
+            <img src="Imagenes de productos/cilindrohidraulicomovil.jpg" alt="cilindrohidraulicomovil">
+            <h4>Cilindro Móvil</h4>
+            <p>Actuador de alta precisión para sistemas industriales.</p>
+           
+          </div>
+          <div class="producto"
+
+data-descripcion="Proporciona gran carrera en espacio compacto mediante múltiples etapas extensibles."
+     data-condiciones=" 70–250 bar, montaje vertical u horizontal, requiere guía y centrado preciso."
+     data-aplicaciones="Volteo de camiones, plataformas elevadoras, maquinaria agrícola"
+     data-precauciones="Evitar interferencias, revisar mangueras y anclajes, proteger contra impactos.">
+          
+     <img src="Imagenes de productos/cilindrohidraulicotelescopico.jpg" alt="cilindrohidraulicotelescopico">
+            <h4>Cilindro Telescópico</h4>
+            <p>Actuador de alta precisión para sistemas industriales.</p>
+       
+          </div>
+          <div class="producto"
+
+data-descripcion="Actuador de carrera corta y alta fuerza en espacios reducidos."
+     data-condiciones="100–250 bar, montaje fijo, carrera limitada, buena alineación"
+     data-aplicaciones="Prensas, moldes, automatización con poco espacio"
+     data-precauciones="No exceder carrera ni presión, evitar cargas laterales, revisar sellos por fugas.">
+          
+     <img src="Imagenes de productos/cilindrohidraulico compacto.jpg" alt="cilindrohidraulico compacto">
+            <h4>Cilindro Compacto</h4>
+            <p>Actuador de alta precisión para sistemas industriales.</p>
+           
+          </div>
+          <div class="producto"
+
+data-descripcion=" Actuador lineal con camisa cilíndrica redonda, ideal para montaje rápido y compacto."
+     data-condiciones="70–250 bar, fijación por bridas o roscas, buena alineación axial"
+     data-aplicaciones="Automatización industrial, prensas ligeras, maquinaria textil o alimentaria."
+     data-precauciones="-  Evitar cargas laterales, revisar sellos, no exceder presión nominal.">
+          
+     <img src="Imagenes de productos/cilindrohidraulico redondo.jpg" alt="cilindrohidraulico redondo">
+            <h4>Cilindro Redondo</h4>
+            <p>Actuador de alta precisión para sistemas industriales.</p>
+           
+          </div>
+        
+        
+        
+        
+        </div>
+      </div>
+
+      <div id="abrazaderas-hidraulicas" class="subcategoria oculto">
+        <h4>Abrazaderas Hidráulicas</h4>
+        <div class="contenedor-productos">
+          <div class="producto">
+            <img src="Imagenes de productos/Abrazadera boss.jpg" alt="Abrazadera Boss">
+            <h4>Abrazadera Boss</h4>
+            <p>Alta resistencia.</p>
+          </div>
+          <div class="producto">
+            <img src="Imagenes de productos/Abrazaderade dobleperno.jpg" alt="Abrazadera doble perno">
+            <h4>Abrazadera doble perno</h4>
+            <p>Diseño robusto.</p>
+          </div>
+          <div class="producto">
+            <img src="Imagenes de productos/Abrazadera de Perno T.jpg" alt="Abrazadera Perno T">
+            <h4>Abrazadera Perno T</h4>
+            <p>Buena sujeción para tuberías.</p>
+            
+          </div>
+          <div class="producto">
+            <img src="Imagenes de productos/Abrazadera sin fin.jpg" alt="Abrazadera sin fin">
+            <h4>Abrazadera sin fin</h4>
+            <p>Buena sujeción para tuberías.</p>
+ 
+          </div>
+
+
+        </div>
+      </div>
+
+      <div id="bombas-hidraulicas" class="subcategoria oculto">
+        <h4>Bombas Hidráulicas</h4>
+        <div class="contenedor-productos">
+          <div class="producto"
+data-descripcion="Transfiere fluido mediante paletas deslizantes en un rotor; ideal para flujo constante y presión moderada."
+     data-condiciones="- 70–210 bar, fluido limpio, buena lubricación, montaje horizontal preferido."
+     data-aplicaciones="-  Maquinaria industrial, sistemas automotrices, equipos agrícolas, compresores."
+     data-precauciones="-  - Evitar cavitación, usar filtros adecuados, revisar desgaste de paletas, no exceder presión nominal.">
+
+
+
+            <img src="Imagenes de productos/Bomba Hidraulica de paletas.jpg" alt="Bomba de paletas">
+            <h4>Bomba hidráulica de paletas</h4>
+            <p>Alta eficiencia para aplicaciones industriales.</p>
+          
+          </div>
+          <div class="producto"
+           data-descripcion="Genera flujo constante con engranes internos."
+     data-condiciones="-  70–210 bar, aceite limpio, montaje robusto."
+     data-aplicaciones="-  Maquinaria agrícola, sistemas industriales básicos."
+     data-precauciones="-   Evitar cavitación, revisar desgaste de engranes.">
+           
+            <img src="Imagenes de productos/Bomba Hidraulica roja.jpg" alt="Bomba de engranes">
+            <h4>Bomba de engranes</h4>
+            <p>Diseño compacto y robusto.</p>
+            
+          </div>
+          <div class="producto"
+           data-descripcion="Genera flujo continuo y silencioso mediante tornillos helicoidales; ideal para grandes caudales."
+     data-condiciones="70–250 bar, aceite limpio, montaje estable, buena lubricación."
+     data-aplicaciones="-  Industria química, petroquímica, naval, sistemas de lubricación y transporte de fluidos."
+     data-precauciones=" Precauciones: Evitar cavitación, usar filtros finos, revisar desgaste de tornillos, no exceder presión nominal.">
+            <img src="Imagenes de productos/Bomba Hidraulica de tornillo.jpg" alt="Bomba hidraulica">
+            <h4>Bomba hidráulica de tornillo</h4>
+            <p>Aplicación industrial general.</p>
+           
+          </div>
+          <div class="producto"
+data-descripcion=" Alta presión y eficiencia con pistones radiales/axiales."
+     data-condiciones="140–350 bar, fluido filtrado, buena refrigeración."
+     data-aplicaciones="Prensas, grúas, maquinaria pesada."
+     data-precauciones="Requiere lubricación constante, sensible a sobrepresión, controlar temperatura.">
+
+            <img src="Imagenes de productos/Bomba Hidraulica de pistones.jpg" alt="Bomba hidraulica de pistones">
+            <h4>Bomba hidráulica de pistones</h4>
+            <p>Aplicación industrial general.</p>
+            
+         
+         
+         
+         
+          </div>
+        </div>
+      </div>
+
+      <div id="conexiones-hidraulicas" class="subcategoria oculto">
+        <h4>Conexiones Hidráulicas</h4>
+        <h3>Existe una gran variedad de conexiones hidráulicas disponibles para diferentes aplicaciones.
+          Pregunta por tus requerimientos específicos y te ayudaremos a encontrar la mejor opción para tu sistema hidráulico.
+        </h3>
+        <div class="contenedor-productos">
+          <div class="producto"
+data-descripcion="Permite acoplar y desacoplar líneas hidráulicas de forma rápida sin pérdida significativa de fluido."
+     data-condiciones="70–350 bar, compatible with aceites hidráulicos, diseño macho/hembra con sellos resistentes."
+     data-aplicaciones="Maquinaria móvil, equipos agrícolas, construcción, sistemas de mantenimiento rápido, etc."
+     data-precauciones="Evitar desconexión bajo presión ya que produce riesgo de fuga y daño en sellos. Mantener limpios los extremos para prevenir contaminación del sistema.">
+            <img src="Imagenes de productos/Conexionrapidahidraulica.jpg" alt="Conexión rápida">
+            <h4>Conexión rápida hidráulica</h4>
+            <p>Conexión segura y fácil de instalar.</p>
+            
+          </div>
+          <div class="producto"
+data-descripcion="Unión rápida y segura de tuberías para conducción de agua y fluidos en sistemas sanitarios."
+     data-condiciones="Presión baja–media (hasta 10 bar), uso en agua potable y desagüe, resistentes a corrosión."
+     data-aplicaciones="Instalaciones domésticas, industriales ligeras, sistemas de riego y drenaje."
+     data-precauciones="No usar con fluidos químicos agresivos ni altas temperaturas, revisar sellado en juntas para evitar fugas. Evitar golpes mecánicos que puedan fracturar el PVC.">
+
+            <img src="Imagenes de productos/conexiones sanitarias pvc.jpg" alt="Conexiones sanitarias PVC">
+            <h4>Conexiones sanitarias PVC</h4>
+            <p>Unión rápida para líneas hidráulicas.</p>
+          
+          </div>
+          <div class="producto"
+data-descripcion="Unión rápida y segura de tuberías sanitarias mediante abrazaderas tipo clamp, garantizando higiene y fácil desmontaje."
+     data-condiciones="Presión baja–media, uso en procesos alimenticios, farmacéuticos y químicos, acero inoxidable o PVC sanitario."
+     data-aplicaciones=" Industria alimentaria, farmacéutica, bebidas, laboratorios, sistemas de conducción de líquidos higiénicos."
+     data-precauciones="Requieren limpieza frecuente para evitar contaminación, no deben usarse con presiones o temperaturas fuera de especificación, y es necesario revisar periódicamente el estado de las juntas para asegurar un sellado confiable.">
+            
+            <img src="Imagenes de productos/conexiones sanitarias tipo clamp.jpg" alt="Conexiones sanitarias tipo clamp">
+            <h4>Conexiones sanitarias tipo clamp</h4>
+            <p>Unión rápida para líneas hidráulicas.</p>
+            
+          </div>
+<div class="producto"
+data-descripcion="Conexiones robustas de acero galvanizado para sistemas hidráulicos, resistentes a la corrosión y presión."
+     data-condiciones="Presión media–alta, resistencia a la corrosión, aptas para ambientes exteriores e industriales."
+     data-aplicaciones="Sistemas hidráulicos industriales, construcción, instalaciones exteriores, sistemas de agua y gas."
+     data-precauciones="Evitar exposición prolongada a ambientes altamente corrosivos sin protección adicional, revisar integridad de roscas y sellos periódicamente.">
+            <img src="Imagenes de productos/conexioneshidraulicas de acero glv.jpg" alt="Conexiones de acero galvanizado">
+            <h4>Conexiones de acero galvanizado</h4>
+            <p>Unión rápida para líneas hidráulicas.</p>
+            
+          </div>
+<div class="producto"
+data-descripcion="Conexiones duraderas de latón para sistemas hidráulicos, con alta resistencia a la corrosión y buena conductividad térmica."
+     data-condiciones="Presión media, resistencia a la corrosión, aptas para sistemas hidráulicos y de gas."
+     data-aplicaciones="Sistemas hidráulicos domésticos e industriales, instalaciones de gas, sistemas de agua potable."
+     data-precauciones="Evitar exposición a ambientes altamente corrosivos, revisar integridad de roscas y sellos periódicamente.">
+            <img src="Imagenes de productos/conexioneshidraulicas de laton.jpg" alt="Conexiones de latón">
+            <h4>Conexiones de latón</h4>
+            <p>Unión rápida para líneas hidráulicas.</p>
+            
+          </div>
+<div class="producto"
+data-descripcion="Unión rápida y segura de mangueras y tuberías hidráulicas mediante un sistema de abrazadera tipo clamp con bloqueo, diseñada para facilitar montaje y desmontaje sin herramientas especiales."
+     data-condiciones="Presión media–alta (hasta 250 bar), compatible con aceites hidráulicos y fluidos industriales, requiere sellos resistentes a la presión y a la abrasión"
+     data-aplicaciones=" Transporte de fluidos en maquinaria agrícola, construcción, minería y sistemas industriales móviles."
+     data-precauciones="No debe desconectarse bajo presión para evitar fugas y daño en los sellos, es necesario revisar periódicamente el estado de la abrazadera y el anillo de retención, y mantener limpios los extremos para prevenir contaminación del sistema.">
+            <img src="Imagenes de productos/conexiones hidraulicas camlock.jpg" alt="Conexiones camlock">
+            <h4>Conexiones camlock</h4>
+            <p>Unión rápida para líneas hidráulicas.</p>
+           
+          </div>
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+      <div id="valvulas-hidraulicas" class="subcategoria oculto">
+        <h4>Válvulas Hidráulicas</h4>
+        <div class="contenedor-productos">
+          <div class="producto">
+            <img src="Imagenes de productos/Valvulasapilables.jpg" alt="Válvula apilable">
+            <h4>Válvula apilable</h4>
+            <p>Modular y fácil de integrar.</p>
+            
+          </div>
+          <div class="producto">
+            <img src="Imagenes de productos/Valvulasdecartucho.jpg" alt="Válvula de cartucho">
+            <h4>Válvula de cartucho</h4>
+            <p>Diseño compacto y eficiente.</p>
+            
+          </div>
+          <div class="producto">
+            <img src="Imagenes de productos/Valvulasmodulares.jpg" alt="Válvula modular">
+            <h4>Válvula modular</h4>
+            <p>Flexible para múltiples configuraciones.</p>
+            
+          </div>
+          <div class="producto">
+            <img src="Imagenes de productos/Valvulasreguladorasdeflujo.jpg" alt="Válvula reguladora de flujo">
+            <h4>Válvula reguladora de flujo</h4>
+            <p>Control preciso del caudal.</p>
+           
+          </div>
+        </div>
+      </div>
+
+     
+
+      <div id="accesorios-hidraulicos" class="subcategoria oculto">
+        <h4>Accesorios Hidráulicos</h4>
+        <div class="contenedor-productos">
+          <div class="producto">
+            <img src="Imagenes de productos/Acumuladoreshidraulicos.jpg" alt="Acumulador hidráulico">
+            <h4>Acumulador hidráulico</h4>
+            <p>Soporte de energía hidráulica.</p>
+            
+          </div>
+          <div class="producto">
+            <img src="Imagenes de productos/manguerahidraulica.jpg" alt="Manguera hidráulica">
+            <h4>Manguera hidráulica</h4>
+            <p>Resistente para aplicaciones hidráulicas.</p>
+            
+          </div>
+<div class="producto">
+            <img src="Imagenes de productos/o rings.jpg" alt="O Rings">
+            <h4>O Rings</h4>
+            <p>Sellos para conexiones hidráulicas.</p>
+           
+          </div>
+<div class="producto">
+            <img src="Imagenes de productos/coraza en espiral para manguera.jpg" alt="Coraza en espiral para manguera">
+            <h4>Coraza en espiral para manguera</h4>
+            <p>Protección para mangueras hidráulicas.</p>
+            
+          </div>
+<div class="producto">
+            <img src="Imagenes de productos/fundaantiflama.jpg" alt="Funda antiflama">
+            <h4>Funda antiflama</h4>
+            <p>Protección contra altas temperaturas.</p>
+           
+          </div>
+<div class="producto">
+            <img src="Imagenes de productos/mangatextil.jpg" alt="Manga textil">
+            <h4>Manga textil</h4>
+            <p>Flexible y resistente para aplicaciones hidráulicas.</p>
+            
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección NEUMÁTICOS -->
+    <div id="neumaticos" class="categoria oculto">
+      <h3>Productos Neumáticos</h3>
+
+      <nav class="menu-categorias">
+        <button onclick="mostrarSubcategoria('valvulas-neumaticas')">Válvulas</button>
+        <button onclick="mostrarSubcategoria('actuadores-neumaticos')">Actuadores</button>
+        <button onclick="mostrarSubcategoria('bombas-neumaticas')">Bombas</button>
+        <button onclick="mostrarSubcategoria('conexiones-neumaticas')">Conexiones</button>
+        <button onclick="mostrarSubcategoria('filtracion-neumaticas')">Filtración</button>
+      </nav>
+
+      
+
+      <div id="actuadores-neumaticos" class="subcategoria oculto">
+        <h4>Actuadores Neumáticos</h4>
+        <div class="contenedor-productos">
+          <div class="producto" 
+    data-descripcion="Hola como estas?."
+     data-condiciones="Temperatura 0–60°C; presión má."
+     data-aplicaciones="Prensas, elevadores, equipos industriales que requieren empuje lineal."
+     data-precauciones="Mantener filtración adecuada; revisar juntas y sellos; evitar golpes de ariete.">
+
+
+
+            <img src="Imagenes de productos/cilindro neumatico de simple efecto.jpg" alt="Compresor neumático">
+            <h4>Cilindro neumático de simple efecto</h4>
+            <p>Ideal para talleres y maquinaria ligera.</p>
+            
+          </div>
+          <div class="producto">
+            <img src="Imagenes de productos/cilindro neumatico de doble efecto.jpg" alt="Cilindro neumático de doble efecto">
+            <h4>Cilindro neumático de doble efecto</h4>
+            <p>Ideal para talleres y maquinaria ligera.</p>
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+      <div id="bombas-neumaticas" class="subcategoria oculto">
+        <h4>Bombas Neumáticas</h4>
+        <div class="contenedor-productos">
+          <div class="producto">
+            <img src="Imagenes de productos/Bomba Neumatica de diafragma.jpg" alt="Bomba neumática de diafragma">
+            <h4>Bomba neumática de diafragma</h4>
+            <p>Modelo adaptado para aplicaciones neumáticas.</p>
+        
+          </div>
+          <div class="producto">
+            <img src="Imagenes de productos/Bomba Neumatica de pedal.jpg" alt="Bomba neumática de pedal">
+            <h4>Bomba neumática de pedal</h4>
+            <p>Modelo adaptado para aplicaciones neumáticas.</p>
+            
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+
+      <div id="conexiones-neumaticas" class="subcategoria oculto">
+        <h4>Conexiones Neumáticas</h4>
+        <div class="contenedor-productos">
+          <div class="producto">
+            <img src="Imagenes de productos/conexion rapida neumatica.jpg" alt="Coples rapidos neumáticos">
+            <h4>Coples rápidos</h4>
+            <p>Fácil montaje en líneas de aire.</p>
+            
+          </div>
+          <div class="producto">
+            <img src="Imagenes de productos/conexion en T neumatica.jpg" alt="Conexión en T neumática">
+            <h4>Conexión en T</h4>
+            <p>Fácil montaje en líneas de aire.</p>
+            
+          </div>
+<div class="producto">
+            <img src="Imagenes de productos/conexion neumatica de acero inoxidable.jpg" alt="Conexión neumática de acero inoxidable">
+            <h4>Conexión neumática de acero inoxidable</h4>
+            <p>Fácil montaje en líneas de aire.</p>
+            
+          </div>
+<div class="producto">
+            <img src="Imagenes de productos/conexion neumatica de laton.jpg" alt="Conexión neumática de latón">
+            <h4>Conexión neumática de latón</h4>
+            <p>Fácil montaje en líneas de aire.</p>
+           
+          </div>
+        </div>
+      </div>
+
+      <div id="valvulas-neumaticas" class="subcategoria oculto">
+        <h4>Válvulas Neumáticas</h4>
+        <div class="contenedor-productos">
+            <div class="producto"
+data-descripcion="Válvula manual para control de flujo de aire en sistemas neumáticos, permitiendo la apertura y cierre del paso de aire mediante una palanca o botón manual."
+     data-condiciones=" Trabaja normalmente entre 2 y 10 bar, en rangos de temperatura de 0 a 60 °C, requiere aire limpio y seco y depende de la fuerza y rapidez del operador."
+     data-aplicaciones="  Sistemas neumáticos industriales, herramientas neumáticas, maquinaria automatizada, líneas de producción."
+     data-precauciones="  No exceder la presión máxima; evitar golpes bruscos; mantener limpio el mecanismo para asegurar su correcto funcionamiento.">
+            <img src="Imagenes de productos/Valvulas neumatica manual.jpg" alt="Válvula Manual">
+            <h4>Válvula manual</h4>
+            <p>Control de aire para sistemas neumáticos.</p>
+           
+            </div>
+           <div class="producto"
+data-descripcion="Válvula eléctrica para control de flujo de aire en sistemas neumáticos, permite la apertura y cierre del paso de aire mediante una señal eléctrica, facilitando la automatización de procesos."
+     data-condiciones=" Trabaja normalmente entre 2 y 10 bar, en rangos de temperatura de 0 a 60 °C, requiere aire limpio y seco y una fuente de alimentación eléctrica adecuada."
+     data-aplicaciones=" Sistemas neumáticos industriales, herramientas neumáticas, maquinaria automatizada, líneas de producción."
+     data-precauciones=" No exceder la presión máxima; evitar sobrecargas eléctricas; mantener limpio el mecanismo para asegurar su correcto funcionamiento.">
+            <img src="Imagenes de productos/Valvulas neumatica con selenoide.jpg" alt="Válvula Electrica">
+            <h4>Válvula eléctrica</h4>
+            <p>Válvula para control eléctrico de aire en sistemas neumáticos.</p>
+            
+            </div>
+           <div class="producto"
+data-descripcion="Válvula con selenoide angular para control de flujo de aire en sistemas neumáticos, diseñada para aplicaciones donde el espacio es limitado y se requiere una instalación compacta."
+     data-condiciones=" Trabaja normalmente entre 2 y 10 bar, en rangos de temperatura de 0 a 60 °C, requiere aire limpio y seco y depende de la fuerza y rapidez del operador."
+     data-aplicaciones="  Sistemas neumáticos industriales, herramientas neumáticas, maquinaria automatizada, líneas de producción."
+     data-precauciones="  No exceder la presión máxima; evitar golpes bruscos; mantener limpio el mecanismo para asegurar su correcto funcionamiento.">
+            <img src="Imagenes de productos/Valvulas neumatica con selenoide angular.jpg" alt="Válvula con selenoide angular">
+            <h4>Válvula con selenoide angular</h4>
+            <p>Válvula con selenoide angular para control de aire en sistemas neumáticos.</p>
+            
+
+          </div>
+        </div>
+      </div>
+
+      <div id="filtracion-neumaticas" class="subcategoria oculto">
+        <h4>FRL Neumática</h4>
+        <div class="contenedor-productos">
+          <div class="producto"
+data-descripcion="Dispositivo para filtrar impurezas y humedad del aire comprimido en sistemas neumáticos, asegurando un funcionamiento óptimo y prolongando la vida útil de los componentes."
+     data-condiciones=" Presión de trabajo: 0.5–10 bar; Temperatura de operación: 0–60 °C; Caudal máximo: según modelo."
+     data-aplicaciones="Sistemas neumáticos industriales, herramientas neumáticas, maquinaria automatizada, líneas de producción."
+     data-precauciones=" Realizar mantenimiento periódico; reemplazar elementos filtrantes según especificaciones; evitar exposición a temperaturas extremas y contaminantes agresivos.">
+            <img src="Imagenes de productos/Filtro neumatico.jpg" alt="Filtro neumático">
+            <h4>Filtro Neumático</h4>
+            <p>Protección y regulación del aire comprimido.</p>
+            
+          </div>
+<div class="producto"
+data-descripcion="Regulador de presión para sistemas neumáticos, permite mantener una presión constante y adecuada en las líneas de aire comprimido, protegiendo los componentes y optimizando el rendimiento del sistema."
+     data-condiciones=" Presión de trabajo: 0.5–10 bar; Temperatura de operación: 0–60 °C; Caudal máximo: según modelo."
+     data-aplicaciones="Sistemas neumáticos industriales, herramientas neumáticas, maquinaria automatizada, líneas de producción."
+     data-precauciones="Realizar ajustes según especificaciones; evitar sobrepresión; mantener limpio el regulador para asegurar su correcto funcionamiento.">
+            <img src="Imagenes de productos/regulador neumatico.jpg" alt="Regulador neumático">
+            <h4>Regulador Neumático</h4>
+            <p>Control de presión para sistemas neumáticos.</p>
+            
+          </div>
+<div class="producto"
+data-descripcion="Lubricador para sistemas neumáticos, diseñado para añadir una fina niebla de aceite al aire comprimido, lubricando los componentes internos y reduciendo el desgaste y la fricción."
+     data-condiciones=" Presión de trabajo: 0.5–10 bar; Temperatura de operación: 0–60 °C; Caudal máximo: según modelo."
+     data-aplicaciones="Sistemas neumáticos industriales, herramientas neumáticas, maquinaria automatizada, líneas de producción."
+     data-precauciones=" Mantener nivel adecuado de aceite; utilizar aceite recomendado; realizar mantenimiento periódico para evitar obstrucciones.">
+            <img src="Imagenes de productos/Lubricador neumatico.jpg" alt="Lubricador neumático">
+            <h4>Lubricador Neumático</h4>
+            <p>Añade una fina niebla de aceite al aire comprimido para lubricar componentes internos.</p>
+            
+          </div>
+<div class="producto"
+data-descripcion="Unidad FRL (Filtro, Regulador, Lubricador) para sistemas neumáticos, combina las funciones de filtración, regulación de presión y lubricación en un solo dispositivo compacto, optimizando el rendimiento y la protección del sistema neumático."
+     data-condiciones=" Presión de trabajo: 0.5–10 bar; Temperatura de operación: 0–60 °C; Caudal máximo: según modelo."
+     data-aplicaciones="Sistemas neumáticos industriales, herramientas neumáticas, maquinaria automatizada, líneas de producción."
+     data-precauciones=" Realizar mantenimiento periódico; reemplazar elementos filtrantes y lubricantes según especificaciones; evitar exposición a temperaturas extremas y contaminantes agresivos.">
+            <img src="Imagenes de productos/FRL neumatico.jpg" alt="FRL neumático">
+            <h4>FRL Neumático</h4>
+            <p>Unidad que combina filtro, regulador y lubricador para sistemas neumáticos.</p>
+            
+          </div>
+
+
+
+
+
+
+
+
+          
+        </div>
+      </div>
+
+      <div id="accesorios-neumaticos" class="subcategoria oculto">
+        <h4>Accesorios Neumáticos</h4>
+        <div class="contenedor-productos">
+          <div class="producto">
+            <img src="Imagenes de productos/accesorio_neumatico.jpg" alt="Accesorio neumático">
+            <h4>Accesorio neumático</h4>
+            <p>Adaptadores y soportes para instalaciones.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección OTROS PRODUCTOS -->
+    <div id="otros-productos" class="categoria oculto">
+      <h3>Otros Productos</h3>
+
+      <nav class="menu-categorias">
+        <button onclick="mostrarSubcategoria('bandas-otros')">Bandas</button>
+        <button onclick="mostrarSubcategoria('insumosindustriales-otros')">Insumos Industriales</button>
+        <button onclick="mostrarSubcategoria('dispositivos-otros')">Dispositivos</button>
+        <button onclick="mostrarSubcategoria('medicion-otros')">Medición</button>
+        <button onclick="mostrarSubcategoria('Electronica-otros')">Electrónica</button>
+        <button onclick="mostrarSubcategoria('accionamientoytrasmicion-otros')">Accionamiento y Transmicion</button>
+  
+      </nav>
+
+      <div id="bandas-otros" class="subcategoria oculto">
+        <h4>Bandas</h4>
+        <div class="contenedor-productos">
+          <div class="producto"
+data-descripcion="Cinta o banda utilizada para sellado y aislamiento en conexiones industriales, evitando fugas y proporcionando resistencia química."
+data-condiciones="Resiste temperaturas de –200 °C a 260 °C, soporta presión moderada, inerte frente a la mayoría de químicos y aceites."
+data-aplicaciones="Sellado de roscas en sistemas hidráulicos y neumáticos, aislamiento en conducciones químicas, uso en plantas de alimentos y farmacéuticas por su carácter no tóxico."
+data-precauciones="No usar en aplicaciones con temperaturas extremas fuera de su rango, evitar exposición prolongada a solventes agresivos, y asegurarse de aplicar correctamente para evitar fugas."> 
+            <img src="Imagenes de productos/Banda de teflon.jpg" alt="Banda de teflón">
+            <h4>Banda de teflón</h4>
+            <p>Cinta PTFE para sellado de roscas en sistemas de alta temperatura.</p>
+          
+          </div>
+
+          <div class="producto"
+data-descripcion="Elemento de transmisión o transporte fabricado con fibras textiles reforzadas, utilizado para mover cargas, transmitir potencia o servir como soporte en procesos industriales."
+data-condiciones="Resiste temperaturas de 0–80 °C, soporta tensión media, flexible y resistente a la abrasión."
+data-aplicaciones="Sistemas de transporte, transmisión de potencia en maquinaria ligera, bandas transportadoras, sistemas de accionamiento en líneas de producción."
+data-precauciones="Evitar exposición prolongada a humedad extrema, revisar tensión periódicamente, proteger de bordes afilados que causen rozaduras.">
+            <img src="Imagenes de productos/Banda de tela.jpg" alt="Banda de tela">
+            <h4>Banda de tela</h4>
+            <p>Banda transportadora de tela reforzada para sistemas ligeros–medianos.</p>
+            
+          </div>
+
+          <div class="producto"
+data-descripcion="Transmitir movimiento y potencia entre poleas mediante dientes que encajan con precisión, evitando deslizamientos."
+data-condiciones="Operación en rangos de temperatura de –30 °C a 120 °C, soporta cargas moderadas–altas, requiere alineación exacta de poleas."
+data-aplicaciones="Maquinaria industrial, sistemas de transporte, motores eléctricos, CNC, compresores y equipos donde se necesita sincronización precisa."
+data-precauciones="No exceder la tensión recomendada, revisar desgaste de dientes y fisuras en el material, evitar contaminación con aceites o químicos que degraden la banda, mantener alineación correcta para prevenir fallas prematuras.">
+            <img src="Imagenes de productos/Banda dentada.jpg" alt="Banda dentada">
+            <h4>Banda dentada</h4>
+            <p>Banda sincrónica con dientes para transmisión de potencia sin deslizamiento.</p>
+           
+          </div>
+
+          <div class="producto"
+data-descripcion="Banda sintética de neopreno, resistente a químicos y cambios de temperatura, ideal para aplicaciones exigentes."
+data-condiciones="Resiste temperaturas de –40–100 °C, resistencia a aceites, grasas y solventes químicos moderados."
+data-aplicaciones="Sistemas hidráulicos y neumáticos, equipos químicos, plantas de procesamiento, sistemas de transporte especializado."
+data-precauciones="No exponer a solventes agresivos prolongadamente, revisar integridad de bordes, evitar plegados que causen grietas.">
+            <img src="Imagenes de productos/Banda grapada.jpg" alt="Grapas para banda">
+            <h4>Grapas para bandas</h4>
+            <p>Grapas metálicas para unión de bandas sin costura química.</p>
+            
+          </div>
+
+
+<div class="producto"
+data-descripcion="Elemento de transmisión o transporte diseñado para cargas moderadas, utilizado en maquinaria ligera y procesos donde se requiere flexibilidad y bajo peso."
+data-condiciones="Opera en rangos de temperatura de –20 °C a 80 °C, soporta tensiones reducidas, adecuada para ambientes secos y con baja abrasión."
+data-aplicaciones="Equipos de empaquetado, bandas transportadoras pequeñas, sistemas de ensamblaje ligero, maquinaria textil y alimentaria."
+data-precauciones=" No usar en aplicaciones de alta carga o fricción intensa, evitar exposición prolongada a humedad o químicos, revisar periódicamente desgaste superficial y tensión para prevenir rupturas.">
+            <img src="Imagenes de productos/Banda ligera.jpg" alt="banda de silicona">
+            <h4>Banda ligera</h4>
+            <p>Banda transportadora ligera para cargas moderadas y espacios reducidos.</p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div id="insumosindustriales-otros" class="subcategoria oculto">
+        <h4>Insumos Industriales</h4>
+        <div class="contenedor-productos">
+          <div class="producto"
+data-descripcion="Elemento fundamental para la transmisión eficiente de potencia entre ejes paralelos en sistemas mecánicos industriales."
+data-condiciones="Rango de diámetros 50–500 mm, materiales acero o aluminio según aplicación, tolerancias precisas."
+data-aplicaciones="Sistemas de transmisión, motores eléctricos, compresores, maquinaria agrícola e industrial."
+data-precauciones="Verificar alineación antes de instalar, evitar sobrecargas, revisar desgaste periódicamente.">
+            <img src="Imagenes de productos/insumo-Emplaye.jpg" alt="Emplaye">
+            <h4>Emplaye</h4>
+            <p>Recubrimiento para protección y aislamiento.</p>
+            
+          </div>
+        <div class="producto"
+data-descripcion="Elemento decorativo y funcional utilizado como separación ligera de espacios, compuesto por tiras o fibras que cuelgan en forma de cortina."
+data-condiciones=" Uso en interiores o exteriores bajo sombra, soporta ambientes cálidos y húmedos, fabricada en fibras naturales o sintéticas."
+data-aplicaciones=" División de espacios en fábricas, protección de áreas de trabajo, control de acceso en almacenes, reducción de contaminación cruzada en procesos productivos."
+data-precauciones="No usar en zonas con tránsito de maquinaria pesada sin refuerzo, revisar periódicamente el desgaste de las tiras, limpiar con regularidad para evitar acumulación de polvo o grasa, sustituir segmentos dañados para mantener la eficacia del aislamiento.">
+            <img src="Imagenes de productos/insumo-cortina hawaiana.jpg" alt="Cortina Hawaiana">
+            <h4>Cortina Hawaiana</h4>
+            <p>Cortina plástica para control de temperatura y separación de ambientes.</p>
+            
+          </div>
+<div class="producto"
+data-descripcion="Elemento decorativo y funcional utilizado como separación ligera de espacios, compuesto por tiras o fibras que cuelgan en forma de cortina."
+data-condiciones=" Uso en interiores o exteriores bajo sombra, soporta ambientes cálidos y húmedos, fabricada en fibras naturales o sintéticas."
+data-aplicaciones=" División de espacios en fábricas, protección de áreas de trabajo, control de acceso en almacenes, reducción de contaminación cruzada en procesos productivos."
+data-precauciones="No usar en zonas con tránsito de maquinaria pesada sin refuerzo, revisar periódicamente el desgaste de las tiras, limpiar con regularidad para evitar acumulación de polvo o grasa, sustituir segmentos dañados para mantener la eficacia del aislamiento.">
+            <img src="Imagenes de productos/insumo-fieltro.jpg" alt="Fieltro">
+            <h4>Fieltro</h4>
+            <p>Fieltro para aislamiento y protección en aplicaciones industriales.</p>
+            
+          </div>
+<div class="producto"
+data-descripcion="Material elastomérico utilizado como recubrimiento, junta o aislante, gracias a su resistencia mecánica y química."
+data-condiciones=" Opera en rangos de temperatura de –40 °C a 120 °C; buena resistencia a aceites moderados, ozono, intemperie y abrasión; no recomendado para hidrocarburos aromáticos o solventes fuertes.22 "
+data-aplicaciones=" División de espacios en fábricas, protección de áreas de trabajo, control de acceso en almacenes, reducción de contaminación cruzada en procesos productivos."
+data-precauciones="No usar en zonas con tránsito de maquinaria pesada sin refuerzo, revisar periódicamente el desgaste de las tiras, limpiar con regularidad para evitar acumulación de polvo o grasa, sustituir segmentos dañados para mantener la eficacia del aislamiento.">
+            <img src="Imagenes de productos/insumo-neopreno.jpg" alt="Neopreno">
+            <h4>Neopreno</h4>
+            <p>Neopreno para aislamiento y protección en aplicaciones industriales.</p>
+            
+
+ </div>
+        </div>
+      </div>
+
+      <div id="dispositivos-otros" class="subcategoria oculto">
+        <h4>Dispositivos</h4>
+        <div class="contenedor-productos">
+          <div class="producto"
+data-descripcion="Cortadora versátil para crear cortes precisos en tuberías y mangueras de diversos materiales, facilitando la instalación y mantenimiento de sistemas hidráulicos y neumáticos."
+data-condiciones="Apta para materiales plásticos, caucho y metales blandos; diámetros de 6–60 mm; uso manual con palanca de corte ajustable."
+data-aplicaciones="Instalación y mantenimiento de sistemas hidráulicos y neumáticos, talleres de reparación, trabajos de fontanería y montaje industrial."
+data-precauciones="Usar equipo de protección personal, mantener la herramienta afilada, evitar aplicar fuerza excesiva que pueda dañar el material o la herramienta.">
+            <img src="Imagenes de productos/Dispositivo-cortadora.jpg" alt="Cortadora">
+            <h4>Cortadora</h4>
+            <p>Herramienta de corte para tuberías y mangueras de diversos materiales.</p>
+            
+          </div>
+          
+          <div class="producto"
+data-descripcion="Avellanadora para crear un asiento cónico en agujeros, facilitando la inserción de tornillos o remaches."
+data-condiciones="Uso en metales y plásticos, diámetros estándar, operación manual o eléctrica."
+data-aplicaciones="Preparación de agujeros para fijaciones, trabajos de carpintería y metalurgia, montaje de componentes industriales."
+data-precauciones="Usar protección ocular, mantener herramienta afilada, evitar sobrecalentamiento, sujetar pieza correctamente.">
+            <img src="Imagenes de productos/Dispositivo-avellanadora.jpg" alt="Avellanadora">
+            <h4>Avellanadora</h4>
+            <p>Herramienta para crear asientos cónicos en agujeros de precisión.</p>
+            
+          </div>
+  <div class="producto"
+data-descripcion="Herramienta para crimpar conectores en cables y mangueras, asegurando una conexión firme y segura."
+data-condiciones="Uso en mangueras hidráulicas, operación manual o eléctrica."
+data-aplicaciones="Instalaciones eléctricas, sistemas hidráulicos, mantenimiento industrial."
+data-precauciones="Usar equipo de protección personal, verificar compatibilidad de conectores, evitar aplicar fuerza excesiva.">
+            <img src="Imagenes de productos/Dispositivo-crimpadora.jpg" alt="Crimpadora">
+            <h4>Crimpadora</h4>
+            <p>Herramienta para crimpar conectores en cables y mangueras, asegurando una conexión firme y segura.</p>
+            
+          </div>
+  <div class="producto"
+data-descripcion="Dobladores para dar forma a tuberías y mangueras sin dañarlas, facilitando la instalación en espacios reducidos."
+data-condiciones="Uso en metales y plásticos, diámetros estándar, operación manual o eléctrica."
+data-aplicaciones="Instalación de tuberías, trabajos de fontanería, montaje de componentes industriales."
+data-precauciones="Usar protección ocular, mantener herramienta en buen estado, evitar doblar más allá del límite recomendado.">
+            <img src="Imagenes de productos/Dispositivo-dobladores.jpg" alt="Dobladores">
+            <h4>Dobladores</h4>
+            <p>Herramienta para crear asientos cónicos en agujeros de precisión.</p>
+            
+          </div>
+
+        </div>
+      </div>
+
+      <div id="medicion-otros" class="subcategoria oculto">
+        <h4>Conexiones</h4>
+        <div class="contenedor-productos">
+          <div class="producto"
+data-descripcion="Manómetro analógico para medición precisa de presión en sistemas hidráulicos y neumáticos, con dial claro y carcasa resistente."
+data-condiciones="Rango de presión , temperatura de operación, sostenidos al fabricante materiales acero inoxidable y vidrio templado."
+data-aplicaciones="Monitoreo de presión en sistemas hidráulicos, neumáticos, industriales y de procesos."
+data-precauciones="Evitar golpes y vibraciones, calibrar periódicamente, proteger de sobrepresiones.  ">
+            <img src="Imagenes de productos/Medicion- manometro.jpg" alt="Manometro">
+            <h4>Manometro</h4>
+            <p>Instrumento para medir la presión en sistemas hidráulicos y neumáticos.</p>
+            
+          </div>
+ <div class="producto"
+data-descripcion="Transductor de presión que convierte señales de presión en señales eléctricas, ideal para monitoreo y control en sistemas industriales."
+data-condiciones="Rango de presión 0–600 bar, salida eléctrica estándar (4-20 mA o 0-10 V), materiales acero inoxidable y sellos resistentes a fluidos industriales."
+data-aplicaciones="Monitoreo de presión en sistemas hidráulicos, neumáticos, industriales y de procesos."
+data-precauciones=" Evitar sobrepresiones, calibrar según especificaciones, proteger de condiciones ambientales extremas.">
+            <img src="Imagenes de productos/Medicion- transductor.jpg" alt="Transductor">
+            <h4>Transductor</h4>
+            <p>Conexión multiuso para integración de tuberías heterogéneas.</p>
+          </div>
+<div class="producto"
+data-descripcion="Vacuómetro para medir presiones inferiores a la atmosférica en sistemas de vacío, con alta precisión y durabilidad."
+data-condiciones="Rango de vacío 0–100 kPa, temperatura de operación, materiales acero inoxidable y vidrio templado."
+data-aplicaciones="Monitoreo de presión en sistemas de vacío industriales y de procesos."
+data-precauciones=" Evitar golpes y vibraciones, calibrar periódicamente, proteger de sobrepresiones.">
+            <img src="Imagenes de productos/Medicion- vacuometro.jpg" alt="vacuometro">
+            <h4>Vacuómetro</h4>
+            <p>Instrumento para medir presiones inferiores a la atmosférica en sistemas de vacío.</p>
+          </div>
+<div class="producto"
+data-descripcion="Termómetro para medir la temperatura en sistemas industriales y de procesos, con alta precisión y durabilidad."
+data-condiciones="Rango de temperatura, materiales acero inoxidable y vidrio templado."
+data-aplicaciones="Monitoreo de temperatura en sistemas industriales y de procesos."
+data-precauciones=" Evitar golpes y vibraciones, calibrar periódicamente, proteger de sobretemperaturas.">
+            <img src="Imagenes de productos/Medicion-termometro.jpg" alt="termometro">
+            <h4>Termómetro</h4>
+            <p>Instrumento para medir la temperatura en sistemas industriales y de procesos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="Electronica-otros" class="subcategoria oculto">
+        <h4>Válvulas</h4>
+        <div class="contenedor-productos">
+          <div class="producto"
+data-descripcion="Válvula proporcional para control preciso de flujo en sistemas electrónicos, con respuesta rápida y ajuste fino."
+data-condiciones="Presión máx. 10 bar, temperatura 0–60°C, materiales latón o acero según versión."
+data-aplicaciones="Sistemas electrónicos, control de procesos, automatización industrial."
+data-precauciones="Evitar sobrepresiones, mantener limpia la válvula, calibrar según especificaciones.">
+            <img src="Imagenes de productos/Electronica-Valvula proporcional.jpg" alt="Válvula proporcional">
+            <h4>Válvula proporcional</h4>
+            <p>Válvula proporcional para control preciso de flujo en sistemas electrónicos.</p>
+            
+          </div>
+ <div class="producto"
+data-descripcion="Controlador electrónico para sistemas de automatización y regulación, con interfaz intuitiva y múltiples opciones de configuración."
+data-condiciones="Soporta voltajes de 24V a 240V, temperatura de operación 0–50°C, materiales plásticos y metálicos resistentes."
+data-aplicaciones="Sistemas electrónicos, control de temperatura, automatización industrial."
+data-precauciones=" Evitar exposición a humedad, proteger de sobrevoltajes, seguir instrucciones de configuración del fabricante.">
+            <img src="Imagenes de productos/Electronica-Controlador.jpg" alt="Controlador electrónico">
+            <h4>Controlador electrónico</h4>
+            <p>Controlador electrónico para sistemas de automatización y regulación.</p>
+          </div>
+           <div class="producto"
+data-descripcion="Motor eléctrico con control de posición y velocidad para aplicaciones de automatización y robótica."
+data-condiciones=" Voltaje 12V–48V, torque variable según modelo, materiales acero y aluminio."
+data-aplicaciones="Sistemas electrónicos, robótica, automatización industrial."
+data-precauciones=" Evitar sobrecargas, mantener ventilación adecuada, seguir especificaciones de instalación.">
+            <img src="Imagenes de productos/Electronica-Servomotores.jpg" alt="Servomotores">
+            <h4>Servomotores</h4>
+            <p>Motor eléctrico con control de posición y velocidad para aplicaciones de automatización y robótica.</p>
+          
+          </div>
+ <div class="producto"
+data-descripcion="Cilindro eléctrico para aplicaciones de automatización y control, con alta precisión y respuesta rápida."
+data-condiciones="Voltaje 24V, carrera variable según modelo, materiales aluminio y acero."
+data-aplicaciones="Sistemas electrónicos, automatización industrial, robótica."
+data-precauciones="Evitar sobrecargas, mantener lubricación adecuada, seguir especificaciones de instalación.">
+            <img src="Imagenes de productos/Electronica-Electrocilindo.jpg" alt="Electrocilindro">
+            <h4>Electrocilindro</h4>
+            <p>Cilindro eléctrico para aplicaciones de automatización y control.</p>
+         
+          </div>
+        </div>
+      </div>
+
+      <div id="filtracion-otros" class="subcategoria oculto">
+        <h4>Filtración</h4>
+        <div class="contenedor-productos">
+          <div class="producto"
+data-descripcion="Cartucho filtrante de microfibra para captura de partículas en aire comprimido y fluidos líquidos, disponible en múltiples rangos de filtrado."
+data-condiciones="Capacidad 5–100 µm según modelo, presión máx. 10 bar, materiales celulosa, sintéticos o poliuretano."
+data-aplicaciones="Protección de herramientas neumáticas, sistemas de aire comprimido, industria alimentaria y farmacéutica."
+data-precauciones="Cambiar según ciclo de vida, evitar saturación, limpiar carcasa antes de instalar nuevo cartucho.">
+            <img src="Imagenes de productos/filtro_generic.jpg" alt="Cartucho filtro">
+            <h4>Cartucho filtro</h4>
+            <p>Elemento filtrante reemplazable para sistemas de aire y fluidos.</p>
+            <p><strong>Precio:</strong> $680 MXN</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="accionamientoytrasmicion-otros" class="subcategoria oculto">
+        <h4>Accesorios</h4>
+        <div class="contenedor-productos">
+          <div class="producto"
+data-descripcion="Motor eléctrico para aplicaciones industriales y de automatización."
+data-condiciones=" Voltaje 110V–220V, potencia variable según modelo, materiales acero y aluminio."
+data-aplicaciones="Sistemas de accionamiento, maquinaria industrial, automatización."
+data-precauciones=" Evitar sobrecargas, mantener condiciones de uso adecuadas, seguir especificaciones de instalación.">
+            <img src="Imagenes de productos/Accionamineto-motor.jpg" alt="Motores">
+            <h4>Motores</h4>
+            <p>Motor eléctrico para aplicaciones industriales y de automatización.</p>
+            
+          </div>
+ <div class="producto"
+data-descripcion="Variadores de frecuencia para control de velocidad en motores eléctricos."
+data-condiciones="Rango de voltaje 110V–480V, frecuencia ajustable, materiales acero y componentes electrónicos resistentes."
+data-aplicaciones="Uso en sistemas de accionamiento, maquinaria industrial, automatización."
+data-precauciones="Cuidar de las condiciones de instalación, evitar sobrecargas, seguir especificaciones del fabricante.">
+            <img src="Imagenes de productos/Accionamineto-variadores.jpg" alt="Variadores">
+            <h4>Variadores</h4>
+            <p>Variadores de frecuencia para control de velocidad en motores eléctricos.</p>
+            
+          </div>
+ <div class="producto"
+data-descripcion="Reduce las RPM y aumenta el torque en sistemas de transmisión mecánica."
+data-condiciones=" Rango de reducción 1:3 a 1:100, materiales acero y aluminio según aplicación."
+data-aplicaciones="Sistemas de transmisión, maquinaria industrial, automatización."
+data-precauciones=" Verificar alineación antes de instalar, evitar sobrecargas, revisar desgaste periódicamente.">
+            <img src="Imagenes de productos/Accionamineto-reductores.jpg" alt="Reductores">
+            <h4>Reductores</h4>
+            <p>Accesorios para sistemas de transmisión y reducción de velocidad.</p>
+           
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    
+
+  </section>
+
+
+
+  <section id="servicios" class="seccion-servicios">
+    <div class="contenedor">
+      <header class="servicios-header">
+        <h2>Servicios </h2>
+        <p class="lead">Soluciones integrales en hidráulica y neumática: mantenimiento, diseño, instalación y capacitación orientados a mejorar la productividad y reducir costos operativos.</p>
+      </header>
+
+      <div class="servicio-grid" role="list">
+        <article class="servicio-card" role="listitem" aria-labelledby="servicio-mantenimiento">
+          <img src="Serviciosreser/Diseño de unidades hidraulicas.jpg" alt="Diseño de unidades hidráulicas" class="servicio-img">
+          <h3 id="servicio-mantenimiento">Diseño de unidades hidráulicas</h3>
+          <p>Diseñamos unidades hidráulicas personalizadas para optimizar el rendimiento y la eficiencia del sistema que necesites.</p>
+          <ul>
+            <li>Levantamiento de piezas o components necesarios</li>
+            <li>Cotizacion detallada de todo lo necesario.</li>
+            <li>Construcción de la unidad acorde a tus necesidades. </li>
+          </ul>
+        </article>
+
+        <article class="servicio-card" role="listitem" aria-labelledby="servicio-instalacion">
+          <img src="Serviciosreser/refacciones y mantenimiento de montacargas.jpg" alt="Refacciones y mantenimiento de montacargas" class="servicio-img">
+          <h3 id="servicio-instalacion">Refacciones y mantenimiento de montacargas</h3>
+          <p>Servicios especializados para mantener tus montacargas en óptimas condiciones y prolongar su vida útil.</p>
+          <ul>
+            <li>Montaje mecánico e hidráulico</li>
+            <li>Pruebas de presión y funcionamiento</li>
+            <li>Capacitación inicial al personal</li>
+          </ul>
+        </article>
+
+        <article class="servicio-card" role="listitem" aria-labelledby="servicio-diseno">
+          <img src="Serviciosreser/visita tecnica en planta.jpg" alt="Visita técnica en planta" class="servicio-img">
+          <h3 id="servicio-diseno">Visita técnica en planta</h3>
+          <p>Podemos realizar visitas técnicas para evaluar y optimizar tus sistemas hidráulicos y neumáticos.</p>
+          <ul>
+            <li>Estudios de viabilidad</li>
+            <li>Asesoría técnica especializada</li>
+            <li>Informes detallados con recomendaciones</li>
+          </ul>
+        </article>
+
+        <article class="servicio-card" role="listitem" aria-labelledby="servicio-capacitacion">
+          <img src="Serviciosreser/asesorias.png" alt="Asesorias y capacitación técnica" class="servicio-img">
+          <h3 id="servicio-capacitacion">Asesorías y capacitación técnica</h3>
+          <p>Cursos prácticos para operación, mantenimiento y seguridad en equipos hidráulicos y neumáticos.</p>
+          <ul>
+            <li>Talleres prácticos</li>
+            <li>Programas en sitio o remoto</li>
+            <li>Material didáctico y certificación</li>
+          </ul>
+        </article>
+
+        <article class="servicio-card" role="listitem" aria-labelledby="servicio-consultoria">
+          <img src="Serviciosreser/Desarrollo e integracion de tableros.jpg" alt="Desarrollo e integración de tableros" class="servicio-img">
+          <h3 id="servicio-consultoria-1">Desarrollo e integración de equipos</h3>
+          <p>Podemos diseñar e integrar equipos ya sea hidraulico, neumatico o electrico para el control de tu sistema. </p>
+          <ul>
+            <li>Diseño personalizado</li>
+            <li>Integración de sistemas</li>
+            <li>Automatización y/o control</li>
+          </ul>
+        </article>
+ <article class="servicio-card" role="listitem" aria-labelledby="servicio-consultoria">
+          <img src="Serviciosreser/Reparacion de bombas.jpg" alt="Reparacion de bombas" class="servicio-img">
+          <h3 id="servicio-consultoria-2">Reparación de bombas</h3>
+          <p>Servicio especializado en la reparación y mantenimiento de bombas hidráulicas para asegurar su óptimo funcionamiento.</p>
+          <ul>
+            <li>Diagnóstico y reparación</li>
+            <li>Mantenimiento preventivo</li>
+            <li>Repuestos originales y garantía</li>
+          </ul>
+        </article>
+ <article class="servicio-card" role="listitem" aria-labelledby="servicio-consultoria">
+          <img src="Serviciosreser/Reparacion de cilindros.jpg" alt="Reparacion de cilindros" class="servicio-img">
+          <h3 id="servicio-consultoria-3">Mantenimiento de cilindros</h3>
+          <p>Servicio especializado en la reparación y mantenimiento de cilindros hidráulicos para asegurar su óptimo funcionamiento.</p>
+          <ul>
+            <li>Diagnóstico y reparación</li>
+            <li>Mantenimiento preventivo</li>
+            <li>Repuestos originales y garantía</li>
+          </ul>
+        </article>
+ <article class="servicio-card" role="listitem" aria-labelledby="servicio-consultoria">
+          <img src="Serviciosreser/refacciones en general.jpg" alt="Refacciones en general" class="servicio-img">
+          <h3 id="servicio-consultoria-4">Refacciones en general</h3>
+          <p>Ademas de todo esto proveemos una amplia gama de refacciones aqui en Reser Industrial para equipos hidráulicos y neumáticos, garantizando calidad y compatibilidad.</p>
+          <ul>
+           
+          </ul>
+        </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <div class="servicios-cta">
+        <p class="cta-text">¿Quieres una evaluación personalizada?</p>
+        <a href="#contacto" class="btn-cta" aria-label="Contactar para servicios">Solicitar Asesoría</a>
+        <p class="nota">Ofrecemos cotizaciones sin compromiso y visitas técnicas programadas.</p>
+      </div>
+    </div>
+  </section>
+<section id="Diagramas">
+    <h2>Diagramas técnicos</h2>
+    <p>Puedes ver varios ejemplos técnicos de diagramas de funcionamiento</p>
+    <a href="secciondiagramas.html">
+      <img src="Fotos de fluid sim/Unidad hidraulica (esquema).png" alt="Ejemplo de diagrama" class="diagrama-link">
+    </a>
+  </section>
+
+
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Reser Industrial</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Añade este script justo antes del cierre de </body> para añadir la info a cada .producto -->
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.contenedor-productos .producto').forEach(prod => {
+    if (prod.querySelector('.producto-info')) return;
+
+    const titleEl = prod.querySelector('h4, h3');
+    const title = titleEl ? titleEl.textContent.trim() : 'Producto';
+
+    const descripcion = prod.dataset.descripcion || `${title} — función principal y cómo contribuye al sistema.`;
+    const condiciones = prod.dataset.condiciones || 'Rango de temperatura y presión según especificación del fabricante.';
+    const aplicaciones = prod.dataset.aplicaciones || 'Aplicaciones típicas en industria y procesos.';
+    const precauciones = prod.dataset.precauciones || 'Mantenimiento recomendado y advertencias de seguridad.';
+
+    const ul = document.createElement('ul');
+    ul.className = 'producto-info';
+    ul.innerHTML = `
+      <li><strong>Descripción funcional:</strong> ${descripcion}</li>
+      <li><strong>Condiciones de operación:</strong> ${condiciones}</li>
+      <li><strong>Aplicaciones típicas:</strong> ${aplicaciones}</li>
+      <li><strong>Precauciones de uso:</strong> ${precauciones}</li>
+    `;
+    prod.appendChild(ul);
+  });
+});
+</script>
+</body>
+</html>

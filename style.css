@@ -1,0 +1,459 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #da7502;
+  color: rgb(16, 17, 19);
+  padding: 20px;
+  text-align: center;
+  background-image: url(Imagenesdereser/RESER\ empresas.png); /* Cambia la ruta por tu imagen */
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  padding: 20px;
+}
+
+.producto {
+  background-color: white;
+  border: 1px solid #000000;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  background-color: #004080;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+nav {
+  background-color: #003366;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 30px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+.imagen-grande {
+  width: 250px;        /* Cambia el tamaño horizontal */
+  height: auto;        /* Mantiene proporción */
+  display: block;      /* Permite moverla */
+
+}
+.logo {
+  width: 150px;         /* Tamaño del logo */
+  height: auto;         /* Mantiene proporción */
+  display: block;
+   /* Centrado con espacio abajo */
+}
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;           /* Permite que los productos bajen si no caben */
+  gap: 20px;                 /* Espacio entre productos */
+  justify-content: center;   /* Centra los productos horizontalmente */
+}
+
+.producto {
+  width: 300px;              /* Tamaño fijo para cada producto */
+  background-color: rgb(25, 68, 150); /*Color de las cajitas de productos*/
+  border: 1px solid #db8c06;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.oculto {
+  display: none;
+}
+
+.categoria {
+  margin-top: 20px;
+}
+
+.menu-categorias {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.menu-categorias .cat-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-categorias .cat-btn img {
+  width: 400px;       /* ajusta tamaño de los botones */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform .15s ease, box-shadow .15s ease;
+  display: block;
+}
+
+.menu-categorias .cat-btn:hover img,
+.menu-categorias .cat-btn:focus img {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.menu-categorias .cat-label {
+  margin-top: 15px;
+  font-weight: 700;
+  color: #003366;
+  font-size: 25px;
+}
+
+/* le da el mismo tamaño a todas las imagenes de productos */
+@media (max-width: 400px) {
+  .menu-categorias .cat-btn img {
+    width: 200px;
+  }
+}
+.diagrama-link {
+  display: block;
+  margin: 12px auto;
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  border: 2px solid rgba(0,0,0,0.08);
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.diagrama-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+.contenedor-productos .producto img {
+  width: 250px;           /* ancho fijo para escritorio */
+  height: 200px;          /* alto fijo para mantener proporción visual */
+  object-fit: cover;      /* recorta sin distorsionar */
+  display: block;
+  margin: 0 auto 9px;
+  border-radius: 6px;
+  background: #f6f6f6;    /* evita fondo transparente si imagen no carga */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 800px) {
+  .contenedor-productos .producto img {
+    width: 220px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-productos {
+    gap: 12px;
+  }
+  .contenedor-productos .producto img {
+    width: 85%;          /* ocupan el ancho del contenedor en móvil */
+    height: 160px;
+  }
+}
+
+/* Fuente para encabezados  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+/* Encabezados con tipografía más atractiva */
+h1 {
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #f07c08;
+  letter-spacing: 0.6px;
+  line-height: 1.05;
+  margin: 0.4rem 0 0.8rem;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.25);
+}
+
+h2, h3, h4 {
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: 0.35px;
+  margin: 0.6rem 0;
+}
+
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1rem; color: #000000; }
+
+/* Ajustes responsivos */
+@media (max-width: 900px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.4rem; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.2rem; }
+}
+
+/* Estilo para la sección de información técnica dentro de cada producto */
+.producto-detalle {
+  background: rgba(3,19,34,0.03);
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #000000;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 1.35;
+  border: 1px solid rgba(3,19,34,0.04);
+}
+
+.producto-detalle h5 {
+  margin: 0 0 8px;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.producto-detalle .detalle-item {
+  margin: 6px 0;
+}
+
+.producto-detalle .detalle-item strong {
+  color: #08314a;
+  display: inline-block;
+  min-width: 150px;
+}
+.producto-info li { color: #000000;
+  margin: 4px 0;
+}
+
+/* Ajustes para tarjetas horizontales (si aplica) */
+@media (min-width: 900px) {
+  .producto-detalle .detalle-item strong { min-width: 180px; }
+}
+
+/* Sección Servicios — diseño estético y aprovechamiento de espacio */
+.seccion-servicios {
+  background: linear-gradient(180deg,#fbfdfe 0%, #ffffff 100%);
+  padding: 42px 30px;
+  border-top: 10px solid rgba(3,19,34,0.04);
+}
+
+.seccion-servicios .contenedor {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.servicios-header {
+  text-align: center;
+  margin-bottom: 22px;
+ 
+}
+
+.servicios-header h2 {
+  font-size: 2rem;
+  color: #032a44;
+  margin: 0 0 6px;
+  font-weight: 800;
+}
+
+.seccion-servicios .lead {
+  color: #516d76;
+  max-width: 920px;
+  margin: 0 auto;
+  font-size: 1.02rem;
+  line-height: 1.4;
+}
+
+/* Grid responsivo que aprovecha el ancho disponible */
+.servicio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+/* Tarjetas más profesionales */
+.servicio-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 8px 26px rgba(6,42,68,0.06);
+  transition: transform .14s ease, box-shadow .14s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 320px;
+  border: 1px solid rgba(3,19,34,0.03);
+}
+
+.servicio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 46px rgba(6,42,68,0.09);
+}
+
+/* Imagen destacada y espaciamiento */
+.servicio-img {
+  width: 100% !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  display: block;
+  border-radius: 8px;
+  background: linear-gradient(90deg,#eef7fb,#f8fbfd);
+  border: 1px solid rgba(3,19,34,0.02);
+}
+
+/* Textos dentro de la tarjeta */
+.servicio-card h3 {
+  font-size: 1.05rem;
+  color: #062938;
+  margin: 0;
+  font-weight: 700;
+}
+
+.servicio-card p {
+  color: #476368;
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.4;
+}
+
+.servicio-card ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: #5b757d;
+  font-size: 0.95rem;
+}
+
+.servicio-card ul li { margin: 6px 0; }
+
+/* CTA centrado y claro */
+.servicios-cta {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.btn-cta {
+  display: inline-block;
+  background: linear-gradient(180deg,#08314a,#0b4a66);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 10px 26px rgba(8,49,74,0.12);
+}
+
+.btn-cta:hover { transform: translateY(-3px); }
+
+/* Notas y subtítulos */
+.seccion-servicios .nota {
+  color: #6b8089;
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+/* Sección servicios: fondo con imagen de portada */
+.seccion-servicios .servicios-header {
+  background-image:
+    linear-gradient(rgba(3,19,34,0.40), rgba(3,19,34,0.18)),
+    url('Imagenesdereser/portada_servicios.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 46px 28px;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+.seccion-servicios .servicios-header h2 {
+  color: #fff;
+}
+.seccion-servicios .servicios-header .lead {
+  color: rgba(255,255,255,0.95);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 900px) {
+  .servicio-img { height: 200px; }
+  .seccion-servicios { padding: 30px 10px; }
+}
+
+@media (max-width: 520px) {
+  .servicio-img { height: 160px; }
+  .servicio-card { padding: 14px; min-height: auto; }
+  .servicios-header h2 { font-size: 1.45rem; }
+}
+
+/* Normalizar tamaño de todas las imágenes de productos */
+.contenedor-productos .producto img {
+  width: 100% !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Asegurar que las imágenes en servicios también sean uniformes */
+.servicio-img {
+  width: 100% !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Imágenes en secciones generales */
+section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Si hay imágenes en header o portadas */
+header img, 
+.imagen-grande {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

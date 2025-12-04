@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Diagramas - Tienda Hidráulica y Neumática</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos mínimos para los botones-imagen y layout */
+    .diag-select {
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+      align-items: center;
+      margin: 18px 0;
+      flex-wrap: wrap;
+    }
+    .diag-btn {
+      border: none;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      text-align: center;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      width: 220px;
+    }
+    .diag-btn img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+      transition: transform .15s ease, box-shadow .15s ease;
+      display: block;
+    }
+    .diag-btn:hover img,
+    .diag-btn:focus img { transform: translateY(-4px); box-shadow: 0 8px 18px rgba(0,0,0,0.16); }
+    .diag-label { margin-top: 8px; font-weight:700; color:#003366; }
+    .diag-categoria { padding: 12px 18px; }
+    .oculto { display: none !important; }
+    .contenedor-productos { display:flex; gap:16px; flex-wrap:wrap; justify-content:center; }
+    .contenedor-productos .producto { max-width:320px; width:100%; }
+    .producto img { width:100%; height:auto; display:block; border-radius:6px; }
+
+    /* estilo para la info adicional de producto */
+    .producto-info { list-style:none; padding:0; margin:8px 0 0; color:#324a5b; font-size:0.95rem; line-height:1.35; }
+    .producto-info li { margin:6px 0; }
+    .producto-info strong { color:#08314a; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Imagenesdereser/reser logo 2.jpg" class="logo" alt="Reser logo">
+    <h1>Diagramas Técnicos</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="index.html#productos">Productos</a>
+    <a href="secciondiagramas.html">Diagramas</a>
+     <a href="index.html#servicios">Servicios</a>
+    <a href="index.html#contacto">Contacto</a>
+
+  </nav>
+
+  <main>
+    <section id="secciondiagramas">
+      <h2>Diagramas Técnicos</h2>
+
+      <!-- Introducción rápida y llamativa sobre términos técnicos -->
+      <div class="intro-diagramas" style="max-width:900px;margin:0 auto 18px;text-align:left;">
+        <p style="font-weight:700;font-size:1.05rem;color:#000000;margin-bottom:8px;">
+          Entiende rápido algunos conceptos que aplicaras en tu compra con nosotros  o en cualquier otro lugar
+        </p>
+
+        <div style="display:flex;gap:24px;flex-wrap:wrap;justify-content:center;">
+          <div style="min-width:280px;">
+            <h4 style="margin-bottom:6px;">Hidráulica</h4>
+            <ul style="margin:0;padding-left:18px;color:#324a5b;line-height:1.35;">
+              <li><strong>Presión</strong> — Fuerza por unidad de área (bar/MPa).</li>
+              <li><strong>Caudal</strong> — Volumen por tiempo (L/min), determina velocidad.</li>
+              <li><strong>Bomba</strong> — Genera flujo; eje del sistema.</li>
+              <li><strong>Válvula direccional</strong> — Controla rutas de flujo.</li>
+              <li><strong>Actuador / Cilindro</strong> — Convierte presión en movimiento.</li>
+              <li><strong>Filtración</strong> — Protege componentes del desgaste.</li>
+            </ul>
+          </div>
+
+          <div style="min-width:280px;">
+            <h4 style="margin-bottom:6px;">Neumática</h4>
+            <ul style="margin:0;padding-left:18px;color:#324a5b;line-height:1.35;">
+              <li><strong>Presión de trabajo</strong> — Normalmente en bar; define fuerza disponible.</li>
+              <li><strong>Compresor</strong> — Fuente de aire comprimido.</li>
+              <li><strong>Regulador / Filtro</strong> — Ajusta y limpia el aire.</li>
+              <li><strong>Válvula</strong> — Dirige y conmutan el aire (manual, solenoide).</li>
+              <li><strong>Cilindro neumático</strong> — Genera movimiento lineal con aire.</li>
+              <li><strong>Caudal</strong> — Controla velocidad de actuación (L/min).</li>
+            </ul>
+          </div>
+        </div>
+
+        <p style="text-align:center;color:#436273;margin-top:10px;font-size:0.96rem;">
+          Usa estos términos como guía rápida al explorar los diagramas. Si quieres, muestro ejemplos destacados con anotaciones.
+        </p>
+      </div>
+
+      <!-- botones-imagen para seleccionar categoría de diagramas -->
+      <div class="diag-select" role="tablist" aria-label="Seleccionar tipo de diagrama">
+        <button class="diag-btn" id="btn-hidraulicos" onclick="mostrarDiagrama('hidraulicos')" aria-controls="hidraulicos" aria-selected="false">
+          <img src="Fotos de fluid sim/Plataforma hidraulia.jpg" alt="Diagramas hidráulicos">
+          <div class="diag-label">Diagrama Hidráulico</div>
+        </button>
+
+        <button class="diag-btn" id="btn-neumaticos" onclick="mostrarDiagrama('neumaticos')" aria-controls="neumaticos" aria-selected="false">
+          <img src="Fotos de fluid sim/Valvula direccional cuadruple de 2 vias.png" alt="Diagramas neumáticos">
+          <div class="diag-label">Diagrama Neumático</div>
+        </button>
+      </div>
+
+      <!-- Contenedores de diagramas separados -->
+      <div id="hidraulicos" class="diag-categoria oculto" role="region" aria-labelledby="btn-hidraulicos">
+        <h3 style="text-align:center;">Diagramas Hidráulicos</h3>
+        <div class="contenedor-productos">
+          <div class="producto">
+            <img src="Fotos de fluid sim/Plataforma hidraulia.jpg" alt="Plataforma hidráulica" style="width: 500px;height:auto;display:block;">
+            <h4>Plataforma hidráulica</h4>
+            <p>Ejemplo de sistema hidráulico para una plataforma.</p>
+
+          </div>
+
+          <div class="producto">
+            <img src="Fotos de fluid sim/Captura de pantalla 2025-11-27 135005.jpg" alt="Medicion de resistencia hidraulica">
+            <h4>Medicion de resistencia hidraulica</h4>
+            <p>Con este circuito se puede medir la resistencia hidráulica en diferentes puntos del sistema.</p>
+
+           
+          </div>
+        </div>
+      </div>
+
+      <div id="neumaticos" class="diag-categoria oculto" role="region" aria-labelledby="btn-neumaticos">
+        <h3 style="text-align:center;">Diagramas Neumáticos</h3>
+        <div class="contenedor-productos">
+          <div class="producto">
+            <img src="Fotos de fluid sim/Prueba de inercia.jpg" alt="Prueba de inercia en neumática ">
+            <h4>Prueba de inercia</h4>
+            <p>Diagrama de válvula direccional para control de cilindros neumáticos.</p>
+
+           
+          </div>
+
+          <div class="producto">
+            <img src="Fotos de fluid sim/Determinacion de caudal nominal.jpg" alt="Determinacion de caudal nominal">
+            <h4>Determinacion de caudal nominal</h4>
+            <p>Con este diagrama se puede determinar el caudal nominal en sistemas neumáticos.</p>
+
+           
+          </div>
+        </div>
+      </div>
+
+      <!-- Nuevo apartado: antecedentes y proyectos -->
+      <div id="antecedentes" class="diag-categoria" role="region" aria-labelledby="antecedentes-title" style="margin-top:24px;">
+        <h3 id="antecedentes-title" style="text-align:center;">Antecedentes y Proyectos</h3>
+        <p style="text-align:center; max-width:900px; margin:8px auto 18px; color:#000000;">
+          Para nosotros lo que mas importa es la palabra y satisfaccion de nuestros clientes, por eso te mostramos nuestros trabajo con toda confianza.
+        </p>
+
+        <div class="contenedor-productos" style="justify-content:center;">
+          <article class="producto" style="max-width:320px;">
+            <img src="Imagenesdereser/Foto del display.jpeg" alt="Proyecto de display" style="width:100%;height:160px;object-fit:cover;border-radius:6px;">
+            <h4>Proyecto de sustitución de display, controlador de temperatura</h4>
+            <li>Se reviso previamente el sistema de control para ver como comenzar en este proyecto.
+            <li>Luego una cotizacion para el cliente y que el sustituto fuera lo mas parecido al anterior.
+              <li>Se hizo la instalacion y puesta en marcha del nuevo display con la adecuada programación.
+            
+
+          
+          </article>
+
+         <article class="producto" style="max-width:320px;">
+            <img src="Imagenesdereser/mantenimiento de soldadora.jpg" alt="Proyecto de mantenimiento de soldadora" style="width:100%;height:160px;object-fit:cover;border-radius:6px;">
+            <h4>Proyecto de mantenimiento correctivo y preventivo de soldadora</h4>
+            <li>Al hacer una inspeccion se detecto deterioro en algunos componentes y otros completamente obsolotos.
+            <li>Se reemplazo los componentes dañados y se hizo una limpieza general preventiva del sistema.
+              <li>Se probo y se reenvio para la respuesta del cliente.
+              </article>
+
+          <article class="producto" style="max-width:320px;">
+            <img src="Serviciosreser/Bomba de engranes.jpeg" alt="Servicio de reparación de bombas hidraulicas" style="width:100%;height:160px;object-fit:cover;border-radius:6px;">
+            <h4>Mantenimiento y reparación de bombas hidráulicas</h4>
+               <li>Diagnosticamos la bomba para identificar fallas y desgastes.
+            <li>Se reemplazaron las piezas desgastadas o dañadas como sellos, vastago, stopas etc.  con repuestos originales.
+              <li>Se prueban para asegurar su correcto funcionamiento antes de la entrega al cliente.
+           
+          </article>
+        </div>
+
+        <p style="text-align:center;margin-top:14px;">
+          <a href="casos.html" style="display:inline-block;padding:10px 16px;border-radius:6px;background:#08314a;color:#fff;text-decoration:none;">Ver casos completos</a>
+        </p>
+      </div>
+
+      
+      <p style="text-align:center; margin-top:18px;"><a href="index.html">Volver al inicio</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Reser Industrial</p>
+  </footer>
+
+  <script>
+    // Muestra la sección de diagramas seleccionada y oculta la otra
+    function mostrarDiagrama(id) {
+      const cats = document.querySelectorAll('.diag-categoria');
+      cats.forEach(c=> c.classList.add('oculto'));
+      const btns = document.querySelectorAll('.diag-btn');
+      btns.forEach(b=> b.setAttribute('aria-selected','false'));
+      const target = document.getElementById(id);
+      if (target) {
+        target.classList.remove('oculto');
+        const btn = document.querySelector('[aria-controls="'+id+'"]');
+        if (btn) btn.setAttribute('aria-selected','true');
+        // desplazar ligeramente hacia la sección
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    }
+
+    // Si quiere mostrar hidráulicos por defecto al cargar:
+    document.addEventListener('DOMContentLoaded', ()=> {
+      // mostrarDiagrama('hidraulicos'); // descomenta para abrir hidráulicos por defecto
+    });
+  </script>
+</body>
+</html>
