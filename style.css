@@ -457,3 +457,129 @@ header img,
   height: auto;
   object-fit: cover;
 }
+
+/* Sección Contacto */
+#contacto {
+  background: #fbfdfe;
+  padding: 40px 12px;
+  border-top: 1px solid rgba(3,19,34,0.04);
+}
+
+#contacto h2 {
+  text-align: center;
+  color: #032a44;
+  margin-bottom: 28px;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.contacto-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.contacto-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(3,19,34,0.06);
+  text-align: center;
+  transition: transform .14s ease, box-shadow .14s ease;
+}
+
+.contacto-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(3,19,34,0.08);
+}
+
+.contacto-card h3 {
+  color: #062938;
+  margin: 0 0 14px;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.contacto-card p {
+  color: #465b63;
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+.contacto-card a {
+  color: #08314a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color .12s ease;
+}
+
+.contacto-card a:hover {
+  color: #f07c08;
+}
+
+.btn-mapa {
+  display: inline-block;
+  background: #08314a;
+  color: #fff !important;
+  padding: 9px 18px;
+  border-radius: 8px;
+  margin-top: 12px;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: background .12s ease;
+}
+
+.btn-mapa:hover {
+  background: #0b4566;
+  color: #fff !important;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .contacto-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+  }
+}
+
+@media (max-width: 680px) {
+  #contacto { padding: 28px 12px; }
+  #contacto h2 { font-size: 1.4rem; }
+  .contacto-container { grid-template-columns: 1fr; gap: 14px; }
+  .contacto-card { padding: 18px; }
+}
+
+/* Aviso al final de Productos */
+.productos-aviso {
+  max-width: 1100px;
+  margin: 22px auto;
+  background: linear-gradient(90deg, #fbfbfb, #f4f7f9);
+  border: 1px solid rgba(3,19,34,0.05);
+  padding: 14px 18px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(3,19,34,0.04);
+}
+
+.productos-aviso p {
+  margin: 0;
+  color: #062938;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.productos-aviso a {
+  color: #0b4a66;
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+@media (max-width: 680px) {
+  .productos-aviso { padding: 12px; margin: 16px 12px; }
+  .productos-aviso p { font-size: 0.95rem; }
+}
