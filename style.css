@@ -1,8 +1,10 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
 }
 
 header {
@@ -96,57 +98,153 @@ header {
 }
 
 section {
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .producto {
-  background-color: white;
-  border: 1px solid #000000;
-  padding: 15px;
-  margin-bottom: 15px;
+  background: white;
+  border: 1px solid rgba(3,19,34,0.08);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(3,19,34,0.06);
+  overflow: hidden;
+  transition: transform .15s ease, box-shadow .15s ease;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 12px;
 }
 
 input, textarea {
-  margin-bottom: 10px;
-  padding: 8px;
+  margin-bottom: 0;
+  padding: 12px;
+  border: 1px solid rgba(3,19,34,0.12);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color .15s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #f07c08;
+  box-shadow: 0 0 0 3px rgba(240,124,8,0.1);
 }
 
 button {
-  background-color: #004080;
+  background: linear-gradient(180deg, #f07c08, #da7502);
   color: white;
-  padding: 10px;
+  padding: 12px 24px;
   border: none;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform .15s ease, box-shadow .15s ease;
+  box-shadow: 0 4px 12px rgba(240,124,8,0.2);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(240,124,8,0.3);
 }
 nav {
-  background-color: #003366;
-  padding: 10px;
+  background: linear-gradient(180deg, #003366 0%, #002244 100%);
+  padding: 15px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: white;
-  margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color .2s ease, border-bottom .2s ease;
+  padding: 8px 4px;
+  border-bottom: 2px solid transparent;
+  letter-spacing: 0.3px;
+}
+
+nav a:hover {
+  color: #f07c08;
+  border-bottom: 2px solid #f07c08;
 }
 
 section {
-  padding: 30px;
+  padding: 40px 20px;
   background-color: #fff;
-  margin: 20px;
-  border-radius: 8px;
+  margin: 0;
+}
+
+section h2 {
+  text-align: center;
+  color: #032a44;
+  margin: 0 0 35px;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+#Productos-destacados {
+  background: linear-gradient(180deg, #fbfdfe 0%, #ffffff 100%);
+}
+
+#Productos-destacados h2 {
+  margin-bottom: 40px;
+  color: #f07c08;
 }
 
 section img {
   max-width: 100%;
   height: auto;
   margin: 10px 0;
+}
+
+.producto {
+  background: white;
+  border: 1px solid rgba(3,19,34,0.08);
+  padding: 0;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(3,19,34,0.06);
+  overflow: hidden;
+  transition: transform .15s ease, box-shadow .15s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.producto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(3,19,34,0.12);
+}
+
+.producto h3, .producto h4 {
+  padding: 16px 16px 0;
+  margin: 0;
+  color: #032a44;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.producto p {
+  padding: 8px 16px 16px;
+  margin: 0;
+  color: #516d76;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex-grow: 1;
 }
 .imagen-grande {
   width: 250px;        /* Cambia el tamaño horizontal */
@@ -162,33 +260,62 @@ section img {
 }
 .contenedor-productos {
   display: flex;
-  flex-wrap: wrap;           /* Permite que los productos bajen si no caben */
-  gap: 20px;                 /* Espacio entre productos */
-  justify-content: center;   /* Centra los productos horizontalmente */
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .producto {
-  width: 300px;              /* Tamaño fijo para cada producto */
-  background-color: rgb(25, 68, 150); /*Color de las cajitas de productos*/
-  border: 1px solid #db8c06;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 280px;
+  background: white;
+  border: 1px solid rgba(3,19,34,0.08);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(3,19,34,0.06);
+  overflow: hidden;
+  transition: transform .15s ease, box-shadow .15s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.producto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(3,19,34,0.12);
+}
+
+.contenedor-productos .producto img {
+  width: 100% !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
 }
 .oculto {
   display: none;
 }
 
 .categoria {
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.categoria h3 {
+  text-align: center;
+  color: #032a44;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .menu-categorias {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
-  margin: 12px 0;
+  margin: 30px 0;
+  flex-wrap: wrap;
 }
 
 .menu-categorias .cat-btn {
@@ -200,6 +327,11 @@ section img {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  transition: opacity .15s ease;
+}
+
+.menu-categorias .cat-btn:hover {
+  opacity: 0.85;
 }
 
 .menu-categorias .cat-btn img {
@@ -506,14 +638,6 @@ h4 { font-size: 1rem; color: #000000; }
   .servicios-header h2 { font-size: 1.45rem; }
 }
 
-/* Normalizar tamaño de todas las imágenes de productos */
-.contenedor-productos .producto img {
-  width: 100% !important;
-  height: 220px !important;
-  object-fit: cover !important;
-  display: block;
-  border-radius: 8px;
-}
 
 /* Asegurar que las imágenes en servicios también sean uniformes */
 .servicio-img {
