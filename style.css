@@ -554,6 +554,170 @@ header img,
   .contacto-card { padding: 18px; }
 }
 
+/* Sección de Inicio — Bienvenida profesional */
+.seccion-inicio {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdfe 100%);
+  padding: 60px 20px;
+  border-bottom: 2px solid rgba(3,19,34,0.08);
+}
+
+.inicio-contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.inicio-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inicio-titulo {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #032a44;
+  margin: 0;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.inicio-subtitulo {
+  font-size: 1.4rem;
+  color: #f07c08;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.inicio-descripcion {
+  font-size: 1.05rem;
+  color: #476368;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 700px;
+}
+
+.inicio-destacados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin: 12px 0;
+}
+
+.destaque {
+  background: #f8fbfd;
+  border: 1px solid rgba(3,19,34,0.06);
+  border-radius: 10px;
+  padding: 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.destaque:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(3,19,34,0.08);
+}
+
+.destaque-icono {
+  font-size: 1.6rem;
+  color: #f07c08;
+  font-weight: 700;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.destaque p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #062938;
+  line-height: 1.5;
+}
+
+.destaque strong {
+  color: #032a44;
+  font-weight: 700;
+}
+
+.inicio-cta {
+  display: inline-block;
+  background: linear-gradient(180deg, #f07c08, #da7502);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 8px 20px rgba(240,124,8,0.25);
+  transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+  width: fit-content;
+}
+
+.inicio-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(240,124,8,0.35);
+  background: linear-gradient(180deg, #da7502, #c86800);
+}
+
+.inicio-nota {
+  font-size: 0.9rem;
+  color: #6b8089;
+  margin: 8px 0 0;
+  font-style: italic;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .seccion-inicio {
+    padding: 48px 16px;
+  }
+  
+  .inicio-titulo {
+    font-size: 2.2rem;
+  }
+  
+  .inicio-subtitulo {
+    font-size: 1.2rem;
+  }
+  
+  .inicio-descripcion {
+    font-size: 1rem;
+  }
+  
+  .inicio-destacados {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .seccion-inicio {
+    padding: 36px 12px;
+  }
+  
+  .inicio-titulo {
+    font-size: 1.8rem;
+  }
+  
+  .inicio-subtitulo {
+    font-size: 1.05rem;
+  }
+  
+  .inicio-descripcion {
+    font-size: 0.95rem;
+  }
+  
+  .destaque {
+    padding: 14px;
+  }
+}
+
 /* Aviso al final de Productos */
 .productos-aviso {
   max-width: 1100px;
