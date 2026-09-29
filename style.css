@@ -293,12 +293,30 @@ section img {
   border-radius: 0 !important;
 }
 .oculto {
-  display: none;
+  display: none !important;
 }
 
 .categoria {
   margin-top: 30px;
   margin-bottom: 30px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.subcategoria {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  animation: fadeIn 0.3s ease-in-out;
+  position: relative;
+  z-index: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .categoria h3 {
@@ -316,6 +334,9 @@ section img {
   align-items: center;
   margin: 30px 0;
   flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .menu-categorias .cat-btn {
@@ -324,14 +345,36 @@ section img {
   padding: 0;
   cursor: pointer;
   text-align: center;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   transition: opacity .15s ease;
 }
 
-.menu-categorias .cat-btn:hover {
-  opacity: 0.85;
+/* Botones de categorías generales */
+#productos > .menu-categorias .cat-btn {
+  flex: 0 1 auto;
+}
+
+/* Botones de subcategorías */
+.categoria .menu-categorias .cat-btn {
+  padding: 10px 16px;
+  background: linear-gradient(180deg, #f07c08, #da7502);
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  flex: 0 1 auto;
+}
+
+.categoria .menu-categorias .cat-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.categoria .menu-categorias .cat-btn img {
+  display: none;
 }
 
 .menu-categorias .cat-btn img {
